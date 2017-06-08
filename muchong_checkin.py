@@ -82,9 +82,3 @@ if __name__ == '__main__':
     my_muchong = MuChong(MUCHONG_USERNAME, MUCHONG_PASSWORD)
     my_muchong.login()
     my_muchong.check_in()
-
-
-
-
-
-
