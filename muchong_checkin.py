@@ -73,7 +73,7 @@ class MuChong(object):
                     coins = BeautifulSoup(r.text, 'html.parser').find('span', {'style': 'color:red;font-weight:bold;font-size:20px;'}).text
                     print('今天领取了金币数为：%s' % get_coins_number)
                     print('目前的总金币数为：%s' % coins)
-                    f.write('本次登录成功，具体时间为：%s. 得到的金币数为：%s. 目前的总金币数为：%s' % (datetime.now(), get_coins_number, coins))
+                    f.write('本次登录成功，具体时间为：%s. 得到的金币数为：%s. 目前的总金币数为：%s.\n' % (datetime.now(), get_coins_number, coins))
             except Exception as e:
                 print('签到失败', e)
                 f.write('签到失败', e)
